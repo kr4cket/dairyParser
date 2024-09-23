@@ -9,7 +9,10 @@ import (
 
 func Run() {
 	var parseData = ReadFile()
+	println("===================================SYNC FUNCTION===================================\n")
 	parser.StartSync(parseData)
+	println("===================================ASYNC FUNCTION===================================\n")
+	parser.StartAsync(parseData)
 }
 
 func ReadFile() []string {
